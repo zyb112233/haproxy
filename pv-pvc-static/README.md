@@ -19,9 +19,9 @@ systemctl start rpcbind
 systemctl enable rpcbind
 
 #查看共享目录
-showmout -e 192.168.122.140
+showmout -e 192.168.122.140s
 
-2　在kubernetes部署
+2　在kubernetes部署:
 kubectl apply -f ./pv-pvc-static
 
 
@@ -38,4 +38,5 @@ persistentvolume/my-pv   5Gi        RWX            Retain           Bound    def
 
 NAME                           STATUS   VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 persistentvolumeclaim/my-pvc   Bound    my-pv    5Gi        RWX  
-     
+ 
+4 存在问题
