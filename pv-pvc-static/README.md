@@ -31,9 +31,11 @@ NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-85456c8677-8qcfp   1/1     Running   0          57m
 nginx-deployment-85456c8677-8xwdz   1/1     Running   0          57m
 nginx-deployment-85456c8677-wjhgf   1/1     Running   0          57m
+
 root@zyb-PC:/home/zyb/.local/share/Trash/files/pv-pvc# kubectl get pv,pvc
 NAME                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM            STORAGECLASS   REASON   AGE
 persistentvolume/my-pv   5Gi        RWX            Retain           Bound    default/my-pvc                           57m
 
 NAME                           STATUS   VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-persistentvolumeclaim/my-pvc   Bound    my-pv    5Gi        RWX       
+persistentvolumeclaim/my-pvc   Bound    my-pv    5Gi        RWX  
+     
