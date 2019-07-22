@@ -7,11 +7,8 @@ yum install nfs-utils -y
 
 #服务器启动
 systemctl start nfs
-
 systemctl enable nfs
-
 systemctl start rpcbind
-
 systemctl enable rpcbind
 
 
@@ -23,7 +20,6 @@ systemctl enable rpcbind
 
 #查看共享目录
 showmout -e 192.168.122.140
-
 
 ２　在kubernetes部署
 kubectl apply -f ./pv-pvc-static
