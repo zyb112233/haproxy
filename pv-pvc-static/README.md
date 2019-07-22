@@ -6,7 +6,7 @@ yum install nfs-utils -y
 /k8s/data 192.168.122.0 (rw,sync)
 
 #服务器启动
-systemctl start nfs
+systemctl start nfs　　　　　　　　　\n
 systemctl enable nfs
 systemctl start rpcbind
 systemctl enable rpcbind
